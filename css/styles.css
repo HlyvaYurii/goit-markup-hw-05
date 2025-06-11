@@ -663,7 +663,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
 }
-
 .btn-exit {
   width: 24px;
   height: 24px;
@@ -723,9 +722,6 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-}
-
-.form-modal {
 }
 
 .div-for-inpt {
@@ -793,12 +789,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-modal:active,
-.input-modal:focus {
+.input-modal:focus,
+.input-modal:active {
   border: 1px solid #4d5ae5;
 }
 
-.input-modal:active,
+.input-modal:active + .svg-input,
 .input-modal:focus + .svg-input {
   fill: #4d5ae5;
 }
@@ -812,6 +808,7 @@ img {
 }
 
 .label-policy {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -827,10 +824,6 @@ img {
   font-size: 12px;
   color: #4d5ae5;
   font-weight: 400;
-}
-
-.label-policy {
-  display: block;
 }
 
 .span-icon {
@@ -865,7 +858,7 @@ img {
   border: none;
   color: #fff;
   display: block;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
